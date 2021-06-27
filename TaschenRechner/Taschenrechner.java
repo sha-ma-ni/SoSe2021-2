@@ -1,17 +1,8 @@
 package TaschenRechner;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
+import java.awt.*;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 import javax.swing.border.Border;
 
 public class Taschenrechner extends JFrame {
@@ -23,10 +14,12 @@ public class Taschenrechner extends JFrame {
 
 		this.setSize(400, 400);      // Größe
 		this.setLocation(500, 300);  // Location
-		this.setVisible(true);       // Sichtbarkeit
+		
 	
 		JPanel content = this.initContent();
 		this.getContentPane().add(content);
+		
+		this.setVisible(true);       // Sichtbarkeit
 	}
 
 	private JPanel initContent() {
